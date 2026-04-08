@@ -25,7 +25,7 @@ jobs:
     name: Apply Labels
     runs-on: ubuntu-latest
     if: |
-      github.repository_owner == 'dotnet' &&
+      github.repository_owner == 'oriamiga1' &&
       (github.event_name == 'issues' ||
       github.event_name == 'workflow_dispatch' ||
       (github.event_name == 'issue_comment' && startsWith(github.event.comment.body, '/triage')))
